@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn"> 开关按钮 </button>
+    <script>
+        /*  1. 给定两个学生对象， 交换它们的考试分数 （提示： 考查交换两个变量的思想） */
+        /*  let obj1 = {
+             name: '小明',
+             score: 60
+         }
+ 
+         let obj2 = {
+             name: '小鱼',
+             score: 100
+         };
+ 
+         [obj1.score,obj2.score] = [obj2.score,obj1.score]
+         console.log(obj1.score);
+         console.log(obj2.score); */
+
+
+
+        /*  2. 请写出至少 5 种 （我们总共学了 8 种）可以把其他类型转换成数字的方法 ？并说出最常用哪种 ？ （提示： 考查知识的归纳能力） */
+        /* 
+         1. + 正号
+         2.parseInt
+         3.pasFloat
+         4.Number()
+         5.==
+         */
+
+
+
+        /*  3. 判断下面代码运行的结果, 并解释原因 （提示： 考查哪5个值可以转成 false, 以及 逻辑 || 的运算规则） */
+        /*  if (NaN || 0 || null || '' || undefined || [] || {} || '0') {
+             alert(1)
+         } else {
+             alert(2)
+         } */
+        //执行1  []是true
+
+
+
+        /* 4. 用三元运算符完成下面要求：依次弹出两个输入框，请输入用户名 和 请输入密码， 判断用户是否填写正确 (用户名： admin, 密码： 123），
+  
+     填写正确弹出 “登录成功”， 填写错误弹出 “登录失败” （考查： 逻辑运算符 && 使用， 和三元表达式） */
+
+        /*  let user = prompt('请输入用户名')
+            let pw = +prompt('请输入密码')
+    
+            //user === 'admin' && pw === 123 ? alert('登录成功') : alert('登录失败') */
+
+
+
+        /* 5. 打印如下的三角形 (9行 9 列)
+
+              ☆
+              ☆☆
+              ☆☆☆
+              ☆☆☆☆
+              ☆☆☆☆☆
+              ☆☆☆☆☆☆
+              ☆☆☆☆☆☆☆
+              ☆☆☆☆☆☆☆☆
+              ☆☆☆☆☆☆☆☆☆
+          打印完成后， 修改成 `9x9` 乘法表效果 */
+
+
+        // for (let i = 1; i <= 9; i++) {
+        //     for (let n = 1; n < i+1; n++) {
+        //         document.write(`${n} * ${i} = ${i*n} &nbsp`)
+        //     }
+        //     document.write('<br>')
+        // } 
+
+
+
+        // !6. 给定一个数组 `var arr = [5, 6, 7, 8, 9, 10, 11, 12]`，判断应用了如下 for 循环后会输出的结果：（考查：for循环的执行流程；return的第二个作用）
+
+        // var arr = [5, 6, 7, 8, 9, 10, 11, 12]
+        // function foo() {
+        //     let i = 2
+        //       //从数组长度为2的开始循环 7,8,9
+        //     for (; i < arr.length; i++) {
+        //         console.log(arr[i])
+
+        //         if (arr[i] % 3 == 0 || arr[i] % 5 == 0) {
+        //             return i
+        //         }
+        //     }
+        // }
+        // var res = foo()
+        // console.log(res) //4
+
+
+
+        // 7. 说出下面函数调用时参数的传递情况， 以及执行后的返回值是多少 ？ 
+
+        // function fn1(arg) {
+        //     return arg
+        // }
+        // fn1()   
+
+
+        // function fn2(arg) {
+        //     return arg
+        // }
+        // fn2(1, 2, 3)
+
+
+        // function fn3(arg) {
+        //     return arg
+        // }
+        // fn3({ a: 1, b: 2 })
+
+
+        // function fn4(arg1, arg2) {
+        //     return arg1 + arg2
+        // }
+        // fn4('hello')
+
+        // function fn5(a, b) {
+        //     console.log(a + b)
+        // }
+        // fn5(3, 4)   //7
+
+        // 8. 编写多个函数， 完成数组的如下功能：  翻转(reverseArr)， 求最值大(getMax)， 选偶数(getEven)， 排序(sortArr)， 累加和(getSum)
+
+
+        // // 翻转(reverseArr)
+        // function reverseArr(arr) {
+        //     let newArr = []
+        //     for (let i = 0; i < arr.length; i++) {
+        //         newArr.unshift(arr[i])
+        //     }
+        //     return newArr
+        // }
+        // console.log(reverseArr([1, 2, 3, 4, 5]))
+
+        // 求最值大(getMax)
+        // function getMax(arr) {
+        //     let max = this[0]
+        //     for(let i = 1;i<arr.length;i++){
+        //         max = max > arr[i] ? max :arr[i]
+        //     }
+        //     return  max
+        // }
+        // console.log(getMax([1, 2, 3, 4, 5]))
+
+        // 排序(sortArr) 
+        //  function sortArr(arr) {
+        //     let max = this[0]
+        //     for(let i = 1;i<arr.length;i++){
+        //         max = max > arr[i] ? max :arr[i]
+        //     }
+        //     return  max
+        // }
+        // console.log(sortArr([1, 2, 3, 4, 5]))
+
+        // 选偶数(getEven)
+        // function getEven(arr) {
+        //     let newArr = []
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (arr[i] % 2 === 0) {
+        //             newArr.push(arr[i])
+        //         }
+        //     }
+        //     return newArr
+        // }
+        // console.log(getEven([1, 2, 3, 4, 5]))
+
+
+        // 累加和(getSum)
+        //  function getSum(arr) {
+        //     let newArr = +''
+        //     for (let i = 0; i < arr.length; i++) {
+        //         newArr += arr[i]
+        //     }
+        //     return newArr
+        // }
+        // console.log(getSum([1, 2, 3, 4, 5]))
+
+
+        /* 
+                9. 判断下面代码执行的结果 （考查： 预解析， 函数返回值， 函数执行顺序和返回值） */
+
+        /*     var num = 10
+    
+            function baz() {
+                return num 
+                var num = 22
+            }
+    
+            // 第一种情况： 如果在这里打印结果是多少 ？
+            console.log(foo)   //如果是foo就undefined  foo()报错
+    
+            var foo = function () {
+                return baz() ? 'css' : 'js'
+            }
+    
+            // 第二种情况： 如果在这里打印结果是多少 ？
+            console.log(foo())     //js */
+
+
+        // 10. 利用 Date 日期，判断当前打开页面的时间是早上（0:00 ~ 12:00）， 下午(12: 00 ~ 17: 00)， 还是晚上(17:00 ~ 24:00)，
+        // 然后分别弹出对应的问候语： 早上就是`该起床了`,  中午就是`该吃饭了`，晚上就是`该休息了`  （提示： 考查日期对象的获取小时方法， 以及多分支 if 语句使用）
+
+        //获取当前小时
+        // let nowDate = new Date().getHours()
+        // /* console.log(nowDate); */
+        // if(nowDate>=0 && nowDate<12){
+        //     alert('该起床了')
+        // }else if(nowDate>=12 && nowDate<17){
+        //     alert('该休息了')
+        // }else if(nowDate>=17 && nowDate<24){
+        //     alert('该休息了')
+        // }
+
+
+        /*     11. 判断下列程序运行的结果 */
+        // 提示： 考查运算符优先级，一元 -- 二元 -- 三元
+
+        // var start = false
+
+        //先算!!start || parseInt('12.22abc')      !!false ||  12     12
+        //12==  12 ? (start = 0) : (start = 1)
+        // var end = !!start || parseInt('12.22abc') ==  12 ? (start = 0) : (start = 1)
+
+        // console.log(start, end)  //0 0 
+
+        // 12. 【自写程序题】 
+
+        //   <b>如何判断一个对象是数组提示：考查对于数组对象的理解<b>
+        /*    let arr = [1,2,3,4,5]
+           let obj ={name:'哈哈哈'}
+
+           // Array.isArray(arr) 方法
+           console.log(Array.isArray(arr));
+
+           //instanceof 检查arr是否在Array上面
+         console.log( arr instanceof Array); */
+
+
+        //   13. 封装一个判断数据类型的函数，形式如下：
+
+
+        // function checkType(arg) {
+        //    if(arg === null){
+        //     return console.log(null);
+        //    }else if(arg instanceof Array){
+        //     return console.log('Array')
+        //    }else{
+        //     return console.log(typeof arg );
+        //    }
+        // }
+        //     function checkType(data){
+        // 	let type = typeof data;
+        // 	if(type !== "object"){
+        // 		return type
+        // 	}
+        // 	return Object.prototype.toString.call(data).replace(/^\[object (\S+)\]$/,'$1')
+        // }
+
+        // checkType('1')
+        // // 返回 string	
+        // checkType(1)
+        // // 返回 number	 
+        // checkType(true)
+        // // 返回 boolean	 
+
+
+        // checkType(null)
+        // // 返回 null
+        // checkType(undefined)
+        // // 返回 undefined	
+        // checkType([])
+        // // 返回 array	
+        // checkType(function () { })
+        // // 返回 function	
+        // checkType({})
+        //     // 返回 object
+
+
+
+        // 14.  假设我们得到一个如下的学生数组：编写程序判断编写程序判断分数最高的学生是哪个？ （学生人数不固定）
+
+        /* 
+                var stus = [
+                    { name: '阿花', score: 40, gender: '女孩' },
+                    { name: '阿兰', score: 60, gender: '女孩' },
+                    { name: '阿冰', score: 80, gender: '女孩' },
+                    { name: '阿美', score: 100, gender: '女孩' },
+                ]
+        
+        
+                function fn(a) {
+                    // max是 全部对象中的分数
+                    let max = a.map(item => {
+                        return item.score
+                    })
+        
+                    //过滤 
+                    let x = a.filter(item => {
+                        if (item.score === Math.max(...max)) {
+                            return item.score
+                        }
+                    })
+                    return console.log(x[0]);
+                }
+                fn(stus) */
+
+        // 15.  现在网页上有一个按钮， 点击之后，我们要把页面原本的白色变为黑色，再点一次页面为白色, 再点击又是黑色，重复以往 提示：利用 js 逻辑和下面提示完成， 
+        //考查 flag 思想，DOM操作 ）
+        let btn = document.querySelector('#btn')
+
+        let flag = true
+
+        btn.addEventListener('click', function () {
+            if (flag) {
+                flag = false
+                document.body.style.backgroundColor = 'black'
+            } else {
+                flag = true
+                document.body.style.backgroundColor = 'white'
+            }
+        })
+
+
+
+
+
+
+
+
+
+
+
+        // 23. 从下面的表数据中，找到对应id 的学生信息；（提示，这里用到函数，数组遍历）
+        // 例如：输入的是 id 是 3， 输出的信息应该是 {id: 3, name: 'xiaoqiang', age: '29', score: 40}
+
+        /*       var students = [
+                  { id: 1, name: 'xiaoqiang', age: '18', score: 90 },
+                  { id: 2, name: 'xiaoqiang', age: '19', score: 50 },
+                  { id: 3, name: 'xiaoqiang', age: '29', score: 40 },
+                  { id: 4, name: 'xiaoqiang', age: '34', score: 60 },
+                  { id: 5, name: 'xiaoqiang', age: '24', score: 80 }
+              ]
+      
+              function fn(n) {
+                 let x = students.filter((item,index)=>{
+                     return  item.id === n
+                  })
+                 return x
+              }
+               let a = fn(3)
+               console.log(a); */
+    </script>
+</body>
+
+</html>

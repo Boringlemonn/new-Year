@@ -1,0 +1,12 @@
+/* 版心 */
+.w{
+    width: 1160px;
+    margin: 0 auto;
+    background-color: pink;
+}
+/* nav */
+.nav{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}

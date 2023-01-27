@@ -1,0 +1,44 @@
+{
+  "id": "3466328",
+  "name": "bilibili漫画",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "49851",
+      "name": "放大镜",
+      "font_class": "41",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "201570",
+      "name": "3.1-刷新",
+      "font_class": "31shuaxin",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "630094",
+      "name": "向右箭头",
+      "font_class": "xiangyoujiantou",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "630095",
+      "name": "向左箭头",
+      "font_class": "xiangzuojiantou",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "791946",
+      "name": "返回顶部",
+      "font_class": "ai-top",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    }
+  ]
+}

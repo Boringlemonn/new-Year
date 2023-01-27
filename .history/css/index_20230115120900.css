@@ -1,0 +1,22 @@
+/* 版心 */
+.w{
+    width: 1160px;
+    margin: 0 auto;
+    background-color: pink;
+}
+/* nav */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  /*   width: 132px; */
+}
+.nav-left h1 img{
+    width: 32px;
+    height: 32px;
+}

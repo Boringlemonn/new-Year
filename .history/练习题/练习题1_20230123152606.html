@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*  1. 给定两个学生对象， 交换它们的考试分数 （提示： 考查交换两个变量的思想） */
+        /*  let obj1 = {
+             name: '小明',
+             score: 60
+         }
+ 
+         let obj2 = {
+             name: '小鱼',
+             score: 100
+         };
+ 
+         [obj1.score,obj2.score] = [obj2.score,obj1.score]
+         console.log(obj1.score);
+         console.log(obj2.score); */
+
+        /*  2. 请写出至少 5 种 （我们总共学了 8 种）可以把其他类型转换成数字的方法 ？并说出最常用哪种 ？ （提示： 考查知识的归纳能力） */
+        /* 
+         1. + 正号
+         2.parseInt
+         3.pasFloat
+         4.Number()
+         5.==
+         */
+
+
+        /*  3. 判断下面代码运行的结果, 并解释原因 （提示： 考查哪5个值可以转成 false, 以及 逻辑 || 的运算规则） */
+       /*  if (NaN || 0 || null || '' || undefined || [] || {} || '0') {
+            alert(1)
+        } else {
+            alert(2)
+        } */
+        //执行1  []是true
+
+        /* 4. 用三元运算符完成下面要求：依次弹出两个输入框，请输入用户名 和 请输入密码， 判断用户是否填写正确 (用户名： admin, 密码： 123），
+  
+     填写正确弹出 “登录成功”， 填写错误弹出 “登录失败” （考查： 逻辑运算符 && 使用， 和三元表达式） */
+
+     let user = prompt('请输入用户名')
+     let pw = +prompt('请输入密码')
+
+     if (user === 'admin' && pw === '123') {
+        alert('登录成功')
+     }else{
+        alert('登录失败')
+     }
+     user === 'admin' && pw === '123' ?   alert('登录成功'):alert('登录失败')
+     
+      
+    </script>
+</body>
+
+</html>
